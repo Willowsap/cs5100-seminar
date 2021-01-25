@@ -1,0 +1,100 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{anyfontsize}
+\usepackage{tabularx}
+\usepackage[table, dvipsnames]{xcolor}
+\usepackage{multirow}
+\usepackage[margin=1.5cm]{geometry}
+
+\definecolor{sapphire}{RGB}{7,7,114}
+\definecolor{pale-sapphire}{RGB}{207,226,243}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\newcommand{\sechead}[1]{\fontsize{14}{22}\textbf{#1}}
+\newcommand{\titleText}[1]{\fontsize{40}{50}\selectfont\color{sapphire}#1}
+
+\begin{document}
+
+% Header
+\begin{tabular}[t]{m{10cm}r}
+\multirow{3}{*}{\titleText{Willow Sapphire}} & (919) 621-8358\\
+& willowsapphire@protonmail.com\\
+& https://github.com/Willowsap
+\end{tabular}
+\\\\
+
+% Professional Summary
+\begin{tabular}[t]{m{3cm}m{12.8cm}}
+\cellcolor{pale-sapphire}
+\sechead{Professional Summary} &
+ Enthusiastic web developer focused on creating \textbf{adaptable} and  \textbf{scalable} applications. Always excited to learn new, modern technologies and to stay on the cutting edge of the web development world.
+\end{tabular}
+\\\\
+
+% Skill Areas
+\begin{tabular}[t]{p{3cm}p{12.8cm}}
+\cellcolor{pale-sapphire}\vspace{.1cm}\sechead{Skill Areas}&
+    \begin{tabular}[t]{p{4cm}p{8.8cm}}
+        Languages&
+        \begin{tabular}[t]{p{4.4cm}p{4.4cm}}
+            \tabitem JavaScript & \tabitem C \\
+            \tabitem Java & \tabitem C++ \\
+            \tabitem PHP & \tabitem Python \\
+        \end{tabular}\\
+        &\\
+        Frameworks&
+        \begin{tabular}[t]{p{4.4cm}p{4.4cm}}
+            \tabitem Angular & \tabitem ReactJS \\
+            \tabitem NodeJS & \tabitem React Native \\
+        \end{tabular}\\
+        &\\
+        Tools and \newline Technologies&
+        \begin{tabular}[t]{p{4.4cm}p{4.4cm}}
+            \tabitem HTML & \tabitem npm \\
+            \tabitem CSS & \tabitem SCSS \\
+            \tabitem Git & \tabitem SQL \\
+            \tabitem Linux & \tabitem Windows \\
+        \end{tabular}
+    \end{tabular}
+\end{tabular}
+\\\\
+
+% Work Experience
+\begin{tabular}[t]{p{3cm}p{12.8cm}}
+\cellcolor{pale-sapphire}\vspace{.1cm}\sechead{Work}\newline\sechead{Experience}&
+    \begin{tabular}[t]{p{8.8cm}p{4cm}}
+        \textbf{Mobile App Developer}\newline
+        Created an Android application for beekeepers to collect data in the field and later upload to the Partnership’s database.\newline
+        \tabitem Created with Angular 1.5 and Cordova \newline
+        \tabitem Designed user-friendly interface for researchers unfamiliar with modern technology
+        & \textbf{BeeInformed}\newline \textbf{Partnership}\newline 2016-2017 \\& 
+    \end{tabular}
+    \begin{tabular}[t]{p{8.8cm}p{4cm}}
+        \textbf{Full Stack Web Developer}\newline
+        Solely responsible for creating and managing the company’s website for selling custom tailored suits.\newline
+        \tabitem Website used by customers and sales staff \newline
+        \tabitem Integrated commerce with Stripe \newline
+        \tabitem Built with a LAMP stack \newline
+        \tabitem Created UI based on requirements and input from stakeholders
+        & \textbf{Corner Tailors}\newline 2014-2016 \\
+    \end{tabular}
+\end{tabular}
+\\\\
+
+% Relevant Coursework
+\begin{tabular}[t]{p{3cm}p{12.8cm}}
+    \cellcolor{pale-sapphire}\vspace{.1cm}\sechead{Relevant Coursework}&
+    \begin{tabular}[t]{p{6.4cm}p{6.4cm}}
+        \vspace{.04pt}\tabitem Databases & \vspace{.04pt}\tabitem Software Engineering \\
+        \tabitem Client Side Web Programming & \tabitem Mobile Device Programming
+        \\\\
+    \end{tabular}
+\end{tabular}
+\\\\
+
+% Education
+\begin{tabular}[t]{p{3cm}p{12.8cm}}
+\cellcolor{pale-sapphire}\vspace{.1cm}\sechead{Education} & \vspace{.1cm}
+BS Computer Science, Appalachian State University 2020 \newline
+MS Computer Science, Appalachian State University 2021 \newline
+\end{tabular}
+
+\end{document}
